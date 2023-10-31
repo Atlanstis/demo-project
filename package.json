@@ -4,11 +4,16 @@
   "description": "用于演示各类 demo.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "default": "node src/index.js",
+    "production": "cross-env NODE_ENVIRONMENT=production node src/production.js"
   },
   "keywords": [
     "demo"
   ],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.3.1"
+  }
 }
